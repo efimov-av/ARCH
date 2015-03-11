@@ -1,0 +1,12 @@
+exe D:\GITREPS\ARCH\OpenMP_matrix\x64\Release\MPI.exe
+n 4
+wdir 
+hosts 
+cfg 
+mpich1 
+env 
+map 
+channel default
+extra -localonly
+window no
+log no
