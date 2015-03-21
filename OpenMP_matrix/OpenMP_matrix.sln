@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenMP_matrix", "OpenMP_matrix\OpenMP_matrix.vcxproj", "{181E5BAA-9468-4FC6-AB53-E8CE07C66884}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMP", "AMP\AMP.vcxproj", "{03ABC37E-6B38-4391-B3AB-012C2A3458B4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPI", "MPI\MPI.vcxproj", "{881C2693-9775-43E4-9207-22F4C28DB928}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimeTest", "TimeTest\TimeTest.vcxproj", "{E36A509E-7003-401A-B5A8-3ED73B2DC59C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,16 @@ Global
 		{881C2693-9775-43E4-9207-22F4C28DB928}.Release|Win32.Build.0 = Release|Win32
 		{881C2693-9775-43E4-9207-22F4C28DB928}.Release|x64.ActiveCfg = Release|x64
 		{881C2693-9775-43E4-9207-22F4C28DB928}.Release|x64.Build.0 = Release|x64
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Debug|Win32.Build.0 = Debug|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Debug|x64.ActiveCfg = Debug|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Release|Win32.ActiveCfg = Release|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Release|Win32.Build.0 = Release|Win32
+		{E36A509E-7003-401A-B5A8-3ED73B2DC59C}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

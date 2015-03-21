@@ -1,7 +1,9 @@
-﻿Сборка начата 26.02.2015 20:50:11.
-     1>Проект "d:\REPS\ARCH\OpenMP_matrix\AMP\AMP.vcxproj" в узле 2 (целевые объекты Build).
+﻿Сборка начата 16.03.2015 7:52:10.
+     1>Проект "D:\REPS\ARCH\OpenMP_matrix\AMP\AMP.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yu"stdafx.h" /Fp"x64\Release\AMP.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt AMP.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yc"stdafx.h" /Fp"x64\Release\AMP.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yu"stdafx.h" /Fp"x64\Release\AMP.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt AMP.cpp
          AMP.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\REPS\ARCH\OpenMP_matrix\x64\Release\AMP.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\REPS\ARCH\OpenMP_matrix\x64\Release\AMP.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\REPS\ARCH\OpenMP_matrix\x64\Release\AMP.lib" /MACHINE:X64 x64\Release\AMP.res
@@ -10,8 +12,8 @@
          Создание кода
          Создание кода завершено
          AMP.vcxproj -> D:\REPS\ARCH\OpenMP_matrix\x64\Release\AMP.exe
-     1>Сборка проекта "d:\REPS\ARCH\OpenMP_matrix\AMP\AMP.vcxproj" завершена (целевые объекты Build).
+     1>Сборка проекта "D:\REPS\ARCH\OpenMP_matrix\AMP\AMP.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:04.57
+Затраченное время: 00:00:04.46

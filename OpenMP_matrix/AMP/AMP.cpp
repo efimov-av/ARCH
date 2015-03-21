@@ -32,16 +32,15 @@
 
 using namespace concurrency;
 
-#define DATA_TYPE int
+#define DATA_TYPE double
 
-//----------------------------------------------------------------------------
-// Generate random data
-//----------------------------------------------------------------------------
+
 template<typename _type>
 void initialize_array(std::vector<_type> &v_data, unsigned size)
 {
 	for (unsigned i = 0; i < size; ++i)
 	{
+		
 		v_data[i] = (_type)((_type)rand() * 100 / (_type)(RAND_MAX + 1));
 	}
 }
@@ -249,7 +248,7 @@ int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	__int64 time2;
+	long time2;
 	int n;
 	accelerator default_device;
 
@@ -280,37 +279,37 @@ int main()
 	assert((M != 0) && (W != 0) && (N != 0));
 
 	printf("Matrix dimension C(%d x %d) = A(%d x %d) * B(%d x %d)\n", M, W, M, N, N, W);
-
+	
 	
 
 	printf("\nCPU(single core) exec ");
-	time2 = __rdtsc();
+	time2 = clock();
 	mxm_single_cpu(M, N, W, v_a, v_b, v_ref);
-	time2 = __rdtsc() - time2;
-	std::cout << "\nTime2: " << time2 / 1595400000 << " seconds" << "\n";
+	time2 = clock() - time2;
+	std::cout << "\nTime2: " << time2/1000.0 << " seconds" << "\n";
 	printf("completed.\n");
 	
 	printf("\nCPU(multi core) exec ");
-	time2 = __rdtsc();
+	time2 = clock();
 	mxm_multi_cpu(M, N, W, v_a, v_b, v_ref_multi);
-	time2 = __rdtsc() - time2;
-	std::cout << "\nTime2: " << time2 / 1595400000 << " seconds" << "\n";
+	time2 = clock() - time2;
+	std::cout << "\nTime2: " << time2 / 1000.0 << " seconds" << "\n";
 	printf("completed.\n");	
 	printf("\t%s\n\n", verify(v_ref_multi, v_ref, M * W) ? "Data matches" : "Data mismatch");
 
 	printf("AMP Simple ");	
-	time2 = __rdtsc();
+	time2 = clock();
 	mxm_amp_simple(M, N, W, v_a, v_b, v_c_simple);	
-	time2 = __rdtsc() - time2;
-	std::cout << "\nTime2: " << time2 / 1595400000 << " seconds" << "\n";
+	time2 = clock() - time2;
+	std::cout << "\nTime2: " << time2 / 1000.0 << " seconds" << "\n";
 	printf("completed.\n");
 	printf("\t%s\n\n", verify(v_c_simple, v_ref, M * W) ? "Data matches" : "Data mismatch");
 
 	printf("AMP Tiled ");
-	time2 = __rdtsc();
+	time2 = clock();
 	mxm_amp_tiled<DATA_TYPE, 16>(M, N, W, v_a, v_b, v_c_tiled);
-	time2 = __rdtsc() - time2;
-	std::cout << "\nTime2: " << time2 / 1595400000 << " seconds" << "\n";
+	time2 = clock() - time2;
+	std::cout << "\nTime2: " << time2 / 1000.0 << " seconds" << "\n";
 	printf("completed.\n");
 	printf("\t%s\n\n", verify(v_c_tiled, v_ref, M * W) ? "Data matches" : "Data mismatch");
 	system("pause");
